@@ -9,7 +9,12 @@
 
 <% end %><p>
 
-  <p><%#= link_to "add a review", restaurant_reviews_path(restaurant) %><p>
+  <p><%= link_to "add a review", new_restaurant_review_path(@restaurant) %><p>
   <p><%= link_to "back to menu", restaurants_path %><p>
 
-
+<h2>Reviews:<h2>
+  <ul>
+    <% @restaurant.reviews.each do |review| %>
+    <li><% review.rating %> | <%= review.content %></li>
+    <% end %>
+  </ul>
