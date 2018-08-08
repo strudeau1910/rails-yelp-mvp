@@ -3,13 +3,11 @@
 one:
   name: MyString
   address: MyString
-  phone: 1
+  phone_number: MyString
   category: MyString
-  review: MyText
 
 two:
   name: MyString
   address: MyString
-  phone: 1
+  phone_number: MyString
   category: MyString
-  review: MyText
